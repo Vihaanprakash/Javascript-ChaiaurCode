@@ -37,3 +37,37 @@ let myObj ={
 const myFunction = function(){
     console.log("hello world")
 }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// COPY IS MADE FOR PRIMITIVE DATA TYPES WHICH USES STACK MEMORY SPACE FOR VARIABLES 
+let myYoutubeName = "Vihaan"
+
+let anotherName = myYoutubeName
+console.log(anotherName)
+
+
+// No copy while passing the variables so original values get changed --> (important)
+
+let user={
+    name: "Vihaan",
+    email:"vihaanprakash1@gmail.com"
+}
+
+let user2 = user
+
+user2.email = "vihaanprakash"
+console.log(user)
+
+const name = "Vihaan"
+const repoCount = 50
+
+console.log(`my name is ${name} and my repocount is
+    ${repoCount}`);
+
+    //String methods +++++++++
+console.log(name.toUpperCase());
+
+console.log(name.length);
+
+
+
